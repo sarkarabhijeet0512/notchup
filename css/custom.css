@@ -369,7 +369,7 @@ ul.select-opt li .check::before {
 }
     .login-wrapper .login-logo img {
     margin: 0 auto;
-    width: 20%;
+    width: 25%;
     float: left;
 
 }
@@ -378,7 +378,7 @@ ul.select-opt li .check::before {
     display: none;
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 25%;
     padding: 2px;
     opacity: 0.1;
 }
