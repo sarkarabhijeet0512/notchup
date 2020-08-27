@@ -62,7 +62,7 @@ $decode=json_decode($data,true);
                                 
                             </div>    
                             <div class="col-sm-6">
-                                    <input name="Country Code" type="text" placeholder="+91" class="country-code" required="required">
+                                    <input name="Country Code" type="tel" placeholder="+91" class="country-code" required="required" onKeyPress="if(this.value.length==5) return false;">
                                 <input name="phone-no" type="number" placeholder="XXXXXX3210" class="phone-no" onKeyPress="if(this.value.length==10) return false;" required="required">
                                 
                             </div>
@@ -89,19 +89,19 @@ $decode=json_decode($data,true);
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-6">
                                     <select id="date" required="required">
-                                        <option value="0" data-id>Date Slot(Select Course First)</option>
+                                        <option value="0" data-id>Date Slot (Select Course First)</option>
                                     </select>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-6">
                                     <select id="time" required="required">
-                                        <option value="0">Time Slot(Select Date First)</option>
+                                        <option value="0">Time Slot (Select Date First)</option>
                                     </select>
                             </div>
                         <div id="loading" class="loader" ><img src='images/ajax-loader.gif' width="200" height="200"><br>Loading..</div>
 
-                            <div class="button-outer col-sm-3">
+                            <div class="button-outer col-sm-3" style="text-align: center;">
                             <button class="btn"><span>Register now </span></button>
                             </div>
                     </div>

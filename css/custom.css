@@ -88,13 +88,14 @@
     border-left: 1px #dae4e8 solid;
     border-bottom: 1px #dae4e8 solid;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     color: #7f8385;
     z-index: 2;
     position: relative;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    border-radius: 7px;
 }
     .form-outer select{
         width: 100%;
@@ -106,13 +107,14 @@
     border-left: 1px #dae4e8 solid;
     border-bottom: 1px #dae4e8 solid;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     color: #7f8385;
     z-index: 2;
     position: relative;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    border-radius: 7px;
     }
     .login-wrapper .inner {
     display: table-cell;
