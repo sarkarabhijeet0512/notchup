@@ -113,19 +113,16 @@ $decode=json_decode($data,true);
 
     <!-- Optional JavaScript -->
 	<script src="js/sweetalert2.all.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/datepicker/js/datepicker.js"></script>
-    <script src="email_validation.js"></script>
-    <script src="js/custom.js"></script>
+    <script async="async" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script defer="defer" src="assets/datepicker/js/datepicker.js"></script>
+    <script defer="defer" src="email_validation.js"></script>
+    <script async="async" src="js/custom.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function(){
 
             $("#course").change(function(){
-                // var sub_id = $(this).val();
                 var sub_index = $(this).children("option:selected").data('index');
-                //var sub_index2 = $('#course_name').attr('data-index');
-                // alert(sub_index);
                 $.ajax({
                     url: 'api.php',
                     type: 'post',
@@ -142,13 +139,9 @@ $decode=json_decode($data,true);
                         var len = response.length;
 
                         $("#date").empty();
-                        // $("#time").empty();
                         for( var i = 0; i<len; i++){
-                            // var id = response[i]['id'];
                             var date = response[i]['date'];
-                            // var date = response[i]['date'];
                             $("#date").append("<option>"+date+"</option>");
-                            // $("#time").append("<option>"+time+"</option>");
                         }
                     }
                 });
@@ -157,7 +150,6 @@ $decode=json_decode($data,true);
             $("#date").change(function(){
                 var time = $(this).val();
                 var sub_index2 = $("#course").children("option:selected").data('index');
-                // var sub_index2 = $(this).children("option:selected").data('id');
                 $.ajax({
                     url: 'api.php',
                     type: 'post',
@@ -175,16 +167,11 @@ $decode=json_decode($data,true);
                         var len = response.length;
 
                         
-                        // $("#time").empty();
                         for( var i = 0; i<len; i++){
-                            // var id = response[i]['id'];
                             var start_time = response[i]['start_time'];
                             var end_time = response[i]['end_time'];
                             var timestamp = response[i]['timestamp'];
-                            // var date = response[i]['date'];
                             $("#time").append("<option value="+timestamp+">"+start_time+" to "+end_time+"</option>");
-                             // $("#time").append("<option>"+time+"</option>");
-
                             }
                         }else{
                             $("#time").append("<option>NO Time Slot Available</option>");
@@ -200,8 +187,6 @@ $decode=json_decode($data,true);
 <script>
 	$('.btn').on('click', function(e) {
     e.preventDefault();
-    // const href = $(this).attr('href')
-
     Swal.fire({
                     icon: 'success',
                     title: 'Thanks!',
@@ -212,8 +197,6 @@ $decode=json_decode($data,true);
                   });
 
       })
-  // })
-			
 </script>
 </body>
 </html>
