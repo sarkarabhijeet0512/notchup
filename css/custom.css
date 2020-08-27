@@ -1,0 +1,325 @@
+/* ================================================== */
+/* 1. register page */
+/* ================================================== */
+   body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #93a0a7;
+    line-height: 26px;
+}
+    .fill-bg {
+    background: url(../images/login-bg.jpg) no-repeat center center / cover;
+    background-attachment: fixed;
+}
+.fill-bg:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+}
+.login-wrapper .head-block h1 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #353434;
+    font-family: fantasy;
+}
+
+.login-wrapper .cnt-block {
+    display: block;
+    padding: 40px;
+    background: #fff;
+}
+    .login-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: table;
+    z-index: 2;
+}
+.login-wrapper .login-logo {
+    margin-bottom: 30px;
+}
+    .register .regiter-inner {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 30px auto;
+}
+    .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: #ff9600;
+    font-family: 'texgyreadventorbold';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+    .login-wrapper .head-block {
+    display: block;
+    padding: 22px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+}
+    .login-wrapper .login-logo img {
+    margin: 0 auto;
+    float: left;
+    width: 15%;
+    
+}
+    .register .cnt-block {
+    padding: 70px 80px;
+}
+    .form-outer input {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    background: none;
+    border: none;
+    border-left: 1px #dae4e8 solid;
+    border-bottom: 1px #dae4e8 solid;
+    font-size: 12px;
+    font-weight: 700;
+    color: #7f8385;
+    z-index: 2;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+    .form-outer select{
+        width: 100%;
+    height: 46px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    background: none;
+    border: none;
+    border-left: 1px #dae4e8 solid;
+    border-bottom: 1px #dae4e8 solid;
+    font-size: 12px;
+    font-weight: 700;
+    color: #7f8385;
+    z-index: 2;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    }
+    .login-wrapper .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.form-outer input.country-code {
+    float: left;
+    width: 16%;
+}
+.form-outer input.phone-no {
+    float: right;
+    width: calc(84% - 18px);
+}
+.register .cnt-block textarea {
+    width: 100%;
+    height: 122px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    background: none;
+    border: none;
+    border-left: 1px #dae4e8 solid;
+    border-bottom: 1px #dae4e8 solid;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7f8385;
+    resize: none;
+}
+.datepicker {
+    min-width: 260px;
+    border: 1px #dae4e8 solid;
+    box-shadow: none;
+}
+.form-outer .date {
+    position: relative;
+}
+.form-outer .date .icon-calander-icon {
+    position: absolute;
+    right: 0px;
+    top: 14px;
+    font-size: 19px;
+    color: #aab8be;
+}
+.register .cnt-block {
+    padding: 70px 80px;
+}
+.register .regiter-inner {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 30px auto;
+}
+.form-outer h2 {
+    padding-bottom: 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #353434;
+}
+.form-outer ul.select-opt {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 40px 0;
+}
+ul.select-opt li {
+    color: #aaa;
+    display: block;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.login-wrapper .cnt-block ul.select-opt li input {
+    height: auto;
+    margin: 0px;
+}
+ul.select-opt li input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+}
+ul.select-opt li label {
+    display: block;
+    position: relative;
+    padding: 0px 30px 0 26px;
+    margin: 0px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+}
+ul.select-opt li .check {
+    display: block;
+    position: absolute;
+    background: #dae4e8;
+    border-radius: 2px;
+    height: 17px;
+    width: 17px;
+    top: 4px;
+    left: 0px;
+    z-index: 5;
+}
+ul.select-opt li:hover .check {
+    border: 3px solid #dae4e8;
+}
+ul.select-opt li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 2px;
+    height: 11px;
+    width: 11px;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+}
+.loader{
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    padding: 2px;
+    opacity: 0.1;
+}
+.form-outer input[type=radio]:checked ~ .check {
+    border: 3px solid #dae4e8;
+}
+.form-outer input[type=radio]:checked ~ .check::before {
+    background: #ef5b34;
+}
+.form-outer input[type="radio"]:checked ~ label {
+    color: #343a3c;
+}
+/* ================================================== */
+/* 2. Responsive Style */
+/* ================================================== */
+@media (max-width: 1199px) and (min-width: 992px){
+.login-wrapper .head-block {
+    padding: 22px 0;
+    }
+    .login-wrapper .login-logo img {
+    margin: 0 auto;
+    width: 15%;
+    float: left;
+ }   
+}
+@media (max-width: 480px){
+.form-outer input {
+    height: 40px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    }
+.form-outer input.country-code {
+    width: 20%;
+}
+.login-wrapper .login-logo img {
+    margin: 0 auto;
+    width: 35%;
+    float: left;
+}
+.loader{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    padding: 2px;
+    opacity: 0.1;
+}
+
+}
+@media (max-width: 767px){
+.login-wrapper .head-block {
+    padding: 18px 15px;
+    }
+.login-wrapper .login-logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.login-wrapper .cnt-block {
+    padding: 30px;
+}
+
+    .login-wrapper .login-logo img {
+    margin: 0 auto;
+    width: 35%;
+    float: left;
+}
+}
+
+@media (max-width: 375px){
+.login-wrapper .cnt-block {
+    padding: 20px 15px;
+    }
+    .login-wrapper .head-block h1 {
+    font-size: 20px;
+}
+    .login-wrapper .login-logo img {
+    margin: 0 auto;
+    width: 35%;
+    float: left;
+
+}
+.loader {
+
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    padding: 2px;
+    opacity: 0.1;
+}
+}
