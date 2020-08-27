@@ -102,7 +102,7 @@ $decode=json_decode($data,true);
                         <div id="loading" class="loader" ><img src='images/ajax-loader.gif' width="200" height="200"><br>Loading..</div>
 
                             <div class="button-outer col-sm-3" style="text-align: center;">
-                            <button class="btn"><span>Register now </span></button>
+                            <button class="btn" type="reset"><span>Register now </span></button>
                             </div>
                     </div>
                     </form>
@@ -203,12 +203,13 @@ $decode=json_decode($data,true);
     // const href = $(this).attr('href')
 
     Swal.fire({
-		  // position: 'top-end',
-		  icon: 'success',
-		  title: 'Your work has been saved',
-		  showConfirmButton: false,
-		  timer: 1500
-		})
+                    icon: 'success',
+                    title: 'Thanks!',
+                    text: 'Your Slot Has Been Booked!',
+                    showConfirmButton: true,
+                  }).then(function() {
+                      window.location = 'index.php';
+                  });
 
       })
   // })
