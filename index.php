@@ -23,7 +23,6 @@ $decode=json_decode($data,true);
     <title></title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/iconmoon/css/iconmoon.css" rel="stylesheet">
     <link href="assets/datepicker/css/datepicker.css" rel="stylesheet">
@@ -116,7 +115,6 @@ $decode=json_decode($data,true);
     <!-- Optional JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/select2/js/select2.min.js"></script>
     <script src="assets/datepicker/js/datepicker.js"></script>
     <script src="email_validation.js"></script>
     <script src="js/custom.js"></script>
