@@ -112,11 +112,12 @@ $decode=json_decode($data,true);
     </section>
 
     <!-- Optional JavaScript -->
-    <script src="js/jquery.min.js"></script>
+	<script src="js/sweetalert2.all.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/datepicker/js/datepicker.js"></script>
     <script src="email_validation.js"></script>
     <script src="js/custom.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function(){
 
@@ -192,9 +193,26 @@ $decode=json_decode($data,true);
                 });
 
             });
+            
 
         });
-
     </script>
+<script>
+	$('.btn').on('click', function(e) {
+    e.preventDefault();
+    // const href = $(this).attr('href')
+
+    Swal.fire({
+		  // position: 'top-end',
+		  icon: 'success',
+		  title: 'Your work has been saved',
+		  showConfirmButton: false,
+		  timer: 1500
+		})
+
+      })
+  // })
+			
+</script>
 </body>
 </html>
