@@ -33,9 +33,9 @@ $decode=json_decode($data,true);
 		$end_time_temp = ($value['time']) + 3600;
 		$end_time = date('H:i', $end_time_temp);
 
-		$cond_starttime=1597570217+60*60*4;
+		$cond_starttime=time()+60*60*4;
 		 
-		$cond_endtime=1597570217+60*60*24*7;
+		$cond_endtime=time()+60*60*24*7;
 		if ($cond_starttime < $value['time'] && $value['time'] < $cond_endtime) {
 		$arr[]=array("start_time"=> $start_time,"end_time"=> $end_time,"timestamp"=> $value['time']);
 		}

@@ -255,7 +255,7 @@ ul.select-opt li .check::before {
     }
     .login-wrapper .login-logo img {
     margin: 0 auto;
-    width: 15%;
+    width: 12%;
     float: left;
  }   
 }
@@ -297,11 +297,69 @@ ul.select-opt li .check::before {
 
     .login-wrapper .login-logo img {
     margin: 0 auto;
-    width: 16%;
+    width: 14%;
     float: left;
 }
 }
+@media (max-width: 600px){
+.login-wrapper .head-block {
+    padding: 18px 15px;
+    }
+.login-wrapper .login-logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.login-wrapper .cnt-block {
+    padding: 30px;
+}
 
+    .login-wrapper .login-logo img {
+    margin: 0 auto;
+    width: 32%;
+    float: left;
+}
+}
+@media (max-width: 568px){
+.login-wrapper .head-block {
+    padding: 18px 15px;
+    }
+.login-wrapper .login-logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.login-wrapper .cnt-block {
+    padding: 30px;
+}
+
+    .login-wrapper .login-logo img {
+    margin: 0 auto;
+    width: 15%;
+    float: left;
+}
+}
+@media (max-width: 415px){
+.login-wrapper .cnt-block {
+    padding: 20px 15px;
+    }
+    .login-wrapper .head-block h1 {
+    font-size: 20px;
+}
+    .login-wrapper .login-logo img {
+    margin: 0 auto;
+    width: 18%;
+    float: left;
+
+}
+.loader {
+
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    padding: 2px;
+    opacity: 0.1;
+}
+}
 @media (max-width: 375px){
 .login-wrapper .cnt-block {
     padding: 20px 15px;
@@ -311,7 +369,7 @@ ul.select-opt li .check::before {
 }
     .login-wrapper .login-logo img {
     margin: 0 auto;
-    width: 28%;
+    width: 20%;
     float: left;
 
 }
