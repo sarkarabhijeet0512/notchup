@@ -355,7 +355,7 @@ ul.select-opt li .check::before {
     display: none;
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 25%;
     padding: 2px;
     opacity: 0.1;
 }
