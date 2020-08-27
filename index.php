@@ -14,13 +14,12 @@ $decode=json_decode($data,true);
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="robots" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="website">
+    <meta name="author" content="Abhijeet Sarkar">
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <title></title>
+    <title>NotchUp|Booking slot</title>
 
     <!-- CSS -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,10 +29,10 @@ $decode=json_decode($data,true);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+    <!-- [if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
-        <![endif]-->
+        <![endif] -->
 <style>
  
 </style>
@@ -50,21 +49,21 @@ $decode=json_decode($data,true);
                     <form action="#" method="POST" class="form-outer">
                         <div class="row">
                             <div class="col-sm-6">
-                                <input name="Parent_Name" type="text" placeholder="Parent's Name">
+                                <input name="Parent_Name" type="text" placeholder="Parent's Name" required="required">
                             </div>
                             <div class="col-sm-6">
-                                <input name="child_name" type="text" placeholder="Child's Name">
+                                <input name="child_name" type="text" placeholder="Child's Name" required="required">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <!-- <input name="parent" type="email" required="required"> -->
-                                <input type="text" id="txtEmail" name="email" onkeyup="ValidateEmail();"  placeholder="Parent's Email ID"/>
+                                <input type="text" id="txtEmail" name="email" onkeyup="ValidateEmail()"  placeholder="Parent's Email ID"/ required="required">
                                 <span id="lblError" style="color: red"></span>
                             </div>    
                             <div class="col-sm-6">
                                     <input name="Country Code" type="text" placeholder="+91" class="country-code">
-                                <input name="phone-no" type="number" placeholder="XXXXXX3210" class="phone-no" onKeyPress="if(this.value.length==11) return false;">
+                                <input name="phone-no" type="number" placeholder="XXXXXX3210" class="phone-no" onKeyPress="if(this.value.length==10) return false;" required="required">
                                 
                             </div>
                         </div>
@@ -73,11 +72,11 @@ $decode=json_decode($data,true);
                             <div class="col-sm-6">
                                 <div class="clearfix"></div>
                                 <div class="date">
-                                    <input type='text' class="datepicker" placeholder="Date of birth" />
+                                    <input type='text' class="datepicker" placeholder="Date of birth" required="required"/>
                                     <span class="icon-calander-icon"></span> </div>
                             </div>
                             <div class="col-sm-6">
-                                <select id="course" class="form-outer">
+                                <select id="course" class="form-outer" required="required">
                                     <option value="0">Select Course Name </option>
                                     <?php 
                                     for ($i=0; $i <$check ; $i++) { 
@@ -91,12 +90,12 @@ $decode=json_decode($data,true);
                         </div>
                         <div class="row">
                             <div class="col-sm-3">
-                                    <select id="date">
+                                    <select id="date" required="required">
                                         <option value="0" data-id>Date Slot(Select Course First)</option>
                                     </select>
                             </div>
                             <div class="col-sm-3">
-                                    <select id="time">
+                                    <select id="time" required="required">
                                         <option value="0">Time Slot(Select Date First)</option>
                                     </select>
                             </div>
