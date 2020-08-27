@@ -18,7 +18,7 @@ $decode=json_decode($data,true);
     <meta name="description" content="website">
     <meta name="author" content="Abhijeet Sarkar">
 
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon/favicon.ico">
     <title>NotchUp|Booking slot</title>
 
     <!-- CSS -->
