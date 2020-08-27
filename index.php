@@ -57,12 +57,12 @@ $decode=json_decode($data,true);
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <!-- <input name="parent" type="email" required="required"> -->
-                                <input type="text" id="txtEmail" name="email" onkeyup="ValidateEmail()"  placeholder="Parent's Email ID"/ required="required">
                                 <span id="lblError" style="color: red"></span>
+                                <input type="text" id="txtEmail" name="email" onkeyup="ValidateEmail()"  placeholder="Parent's Email ID"/ required="required">
+                                
                             </div>    
                             <div class="col-sm-6">
-                                    <input name="Country Code" type="text" placeholder="+91" class="country-code">
+                                    <input name="Country Code" type="text" placeholder="+91" class="country-code" required="required">
                                 <input name="phone-no" type="number" placeholder="XXXXXX3210" class="phone-no" onKeyPress="if(this.value.length==10) return false;" required="required">
                                 
                             </div>
